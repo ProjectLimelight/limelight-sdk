@@ -1,0 +1,19 @@
+platform :ios, "12.0"
+use_frameworks!
+
+target "DemoObjC" do
+  project "DemoObjC.xcodeproj"
+  pod "AppLovinSDK"
+  pod "LimelightSDK", :path => "../../.."
+  pod "LimelightSDKAppLovinAdapter", :path => "../../../LimelightSDKAppLovinAdapter"
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings["ENABLE_USER_SCRIPT_SANDBOXING"] = "NO"
+      end
+    end
+  end
+end

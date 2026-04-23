@@ -1,0 +1,30 @@
+PODS:
+  - AppLovinSDK (13.6.2)
+  - LimelightSDK (1.0.0)
+  - LimelightSDKAppLovinAdapter (1.0.0):
+    - AppLovinSDK
+    - LimelightSDK
+
+DEPENDENCIES:
+  - AppLovinSDK
+  - LimelightSDK (from `../../..`)
+  - LimelightSDKAppLovinAdapter (from `../../../LimelightSDKAppLovinAdapter`)
+
+SPEC REPOS:
+  trunk:
+    - AppLovinSDK
+
+EXTERNAL SOURCES:
+  LimelightSDK:
+    :path: "../../.."
+  LimelightSDKAppLovinAdapter:
+    :path: "../../../LimelightSDKAppLovinAdapter"
+
+SPEC CHECKSUMS:
+  AppLovinSDK: 91a47db42b6c0e2b83224006aa46b0b88c62c16f
+  LimelightSDK: 023e060fe89e28f2dcd4beff0c1eb93aa1b800a9
+  LimelightSDKAppLovinAdapter: 9d78a054ad09b3753ff6e1dc7d0aa28c52fd2f94
+
+PODFILE CHECKSUM: 6b841a52f1cd8a6895152e9c34a465a9a1858598
+
+COCOAPODS: 1.16.2
